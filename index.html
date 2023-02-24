@@ -35,11 +35,11 @@
       <div class="row ">
         <div class="col-5 mb-3">
           <label for="creditCard" class="form-label">Credit Card</label>
-          <input type="text" class="form-control" id="creditCard" aria-describedby="creditHelp" minlength=16 maxlength=16 required>
+          <input type="text" class="form-control" id="creditCard" aria-describedby="creditHelp" pattern="^[0-9]{16}$" minlength=16 maxlength=16 required>
         </div>
         <div class="col-3 mb-3">
           <label for="cvc" class="form-label">CVC</label>
-          <input type="password" class="form-control" id="cvc" minlength=3 maxlength=3 required>
+          <input type="text" class="form-control" id="cvc" pattern="^[0-9]{3,4}$" minlength=3 maxlength=3 required>
         </div>
         <div class="col-4 mb-3">
           <label for="creditCard" class="form-label">Amount</label>
@@ -50,18 +50,18 @@
       <div class="row ">
         <div class="col mb-3">
           <label for="firstName" class="form-label">First Name</label>
-          <input type="text" class="form-control" id="firstName" required>
+          <input type="text" class="form-control" id="firstName" pattern="(^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$)" required>
         </div>
         <div class="col mb-3">
           <label for="lastName" class="form-label">Last Name</label>
-          <input type="text" class="form-control" id="lastName" required>
+          <input type="text" class="form-control" id="lastName" pattern="(^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$)" required>
         </div>
       </div>
 
       <div class="row">
         <div class="col-6 mb-3">
           <label for="city" class="form-label">City</label>
-          <input type="text" class="form-control" id="city" required>
+          <input type="text" class="form-control" id="city" pattern="(^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$)" required>
         </div>
         <div class="col-3 mb-3">
           <label for="state" class="form-label">State</label>
@@ -74,7 +74,7 @@
         </div>
         <div class="col-3 mb-3">
           <label for="postalCode" class="form-label">Postal Code</label>
-          <input type="text" class="form-control" id="postalCode" required>
+          <input type="text" class="form-control" id="postalCode" pattern="^[0-9]{6}$" minlength=6 maxlength=6 required>
         </div>
       </div>
 
